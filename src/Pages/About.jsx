@@ -21,7 +21,7 @@ const Header = memo(() => (
       data-aos-duration="800"
     >
       <Sparkles className="w-5 h-5 text-purple-400" />
-      Transforming ideas into digital experiences
+      Transforming ideas into innovative engineering solutions
       <Sparkles className="w-5 h-5 text-purple-400" />
     </p>
   </div>
@@ -118,15 +118,10 @@ const AboutPage = () => {
     const storedProjects = JSON.parse(localStorage.getItem("projects") || "[]");
     const storedCertificates = JSON.parse(localStorage.getItem("certificates") || "[]");
     
-    const startDate = new Date("2021-11-06");
-    const today = new Date();
-    const experience = today.getFullYear() - startDate.getFullYear() -
-      (today < new Date(today.getFullYear(), startDate.getMonth(), startDate.getDate()) ? 1 : 0);
-
     return {
       totalProjects: storedProjects.length,
       totalCertificates: storedCertificates.length,
-      YearExperience: experience
+      YearExperience: "2nd Year"
     };
   }, []);
 
@@ -160,8 +155,8 @@ const AboutPage = () => {
       icon: Code,
       color: "from-[#6366f1] to-[#a855f7]",
       value: totalProjects,
-      label: "Total Projects",
-      description: "Innovative web solutions crafted",
+      label: "Engineering Projects",
+      description: "Innovative solutions designed",
       animation: "fade-right",
     },
     {
@@ -169,15 +164,15 @@ const AboutPage = () => {
       color: "from-[#a855f7] to-[#6366f1]",
       value: totalCertificates,
       label: "Certificates",
-      description: "Professional skills validated",
+      description: "Technical skills validated",
       animation: "fade-up",
     },
     {
       icon: Globe,
       color: "from-[#6366f1] to-[#a855f7]",
-      value: YearExperience,
-      label: "Years of Experience",
-      description: "Continuous learning journey",
+      value: "2nd Year",
+      label: "University Level",
+      description: "BEng Mechanical Engineering",
       animation: "fade-left",
     },
   ], [totalProjects, totalCertificates, YearExperience]);
@@ -205,7 +200,7 @@ const AboutPage = () => {
                 data-aos="fade-right"
                 data-aos-duration="1300"
               >
-                Eki Zulfar Rachman
+                Saint Michel Linus Nto Bessala
               </span>
             </h2>
             
@@ -214,7 +209,7 @@ const AboutPage = () => {
               data-aos="fade-right"
               data-aos-duration="1500"
             >
-             Seorang lulusan Teknik Jaringan Komputer dan Telekomunikasi yang memiliki ketertarikan besar dalam pengembangan Front-End. Saya berfokus pada menciptakan pengalaman digital yang menarik dan selalu berusaha memberikan solusi terbaik dalam setiap proyek yang saya kerjakan.
+             Enthusiastic and technically curious Mechanical Engineering undergraduate at University of Leeds with strong Data anlysis and software skills, a growing interest in AI/ML, Bussiness, Economics, semiconductor electronics, and experienced in RF systems, ML automation and simulation-driven design. I'm eager to contribute to the future of test software development,AI and finite element modelling. A fast learner, collaborative team player, and committed problem solver excited by high-performance electronics, aerospace, Product Design, Architecture and thermal stress domains.
             </p>
 
                {/* Quote Section */}
@@ -235,12 +230,12 @@ const AboutPage = () => {
         </div>
         
         <blockquote className="text-gray-300 text-center lg:text-left italic font-medium text-sm relative z-10 pl-6">
-          "Leveraging AI as a professional tool, not a replacement."
+          "I thrive on tackling real-world challenges—from scripting automated thermal cycling workflows to exploring vibration effects on RF housings and Data analysis."
         </blockquote>
       </div>
 
             <div className="flex flex-col lg:flex-row items-center lg:items-start gap-4 lg:gap-4 lg:px-0 w-full">
-              <a href="https://drive.google.com/drive/folders/1BOm51Grsabb3zj6Xk27K-iRwI1zITcpo" className="w-full lg:w-auto">
+              <a href="Saint_Michel_Bessala_CV.docx" download className="w-full lg:w-auto">
               <button 
                 data-aos="fade-up"
                 data-aos-duration="800"

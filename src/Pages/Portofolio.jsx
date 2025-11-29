@@ -102,20 +102,22 @@ function a11yProps(index) {
   };
 }
 
-// techStacks tetap sama
+// Engineering Tech Stacks
 const techStacks = [
-  { icon: "html.svg", language: "HTML" },
-  { icon: "css.svg", language: "CSS" },
+  { icon: "python.svg", language: "Python" },
+  { icon: "matlab.svg", language: "MATLAB" },
+  { icon: "ansys.svg", language: "ANSYS" },
+  { icon: "solidworks.svg", language: "SolidWorks" },
+  { icon: "autocad.svg", language: "AutoCAD" },
+  { icon: "onshape.svg", language: "Onshape" },
+  { icon: "c++.svg", language: "C++" },
+  { icon: "c.svg", language: "C" },
+  { icon: "labview.svg", language: "LabVIEW" },
+  { icon: "java.svg", language: "Java" },
   { icon: "javascript.svg", language: "JavaScript" },
-  { icon: "tailwind.svg", language: "Tailwind CSS" },
-  { icon: "reactjs.svg", language: "ReactJS" },
-  { icon: "vite.svg", language: "Vite" },
-  { icon: "nodejs.svg", language: "Node JS" },
-  { icon: "bootstrap.svg", language: "Bootstrap" },
-  { icon: "firebase.svg", language: "Firebase" },
-  { icon: "MUI.svg", language: "Material UI" },
-  { icon: "vercel.svg", language: "Vercel" },
-  { icon: "SweetAlert.svg", language: "SweetAlert2" },
+  { icon: "firebase.svg", language: "Firebase" },  
+  { icon: "sql.svg", language: "SQL" },
+  { icon: "arduino.svg", language: "Arduino" },
 ];
 
 export default function FullWidthTabs() {
@@ -209,8 +211,8 @@ export default function FullWidthTabs() {
           </span>
         </h2>
         <p className="text-slate-400 max-w-2xl mx-auto text-sm md:text-base mt-2">
-          Explore my journey through projects, certifications, and technical expertise. 
-          Each section represents a milestone in my continuous learning path.
+          Explore my engineering projects, certifications, and technical expertise. 
+          Each section represents a milestone in my mechanical engineering journey.
         </p>
       </div>
 
