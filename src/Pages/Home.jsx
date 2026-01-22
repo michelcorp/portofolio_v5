@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useCallback, memo } from "react"
 import { Github, Linkedin, Mail, ExternalLink, Instagram, Sparkles } from "lucide-react"
-import { DotLottieReact } from '@lottiefiles/dotlottie-react'
+import Lottie from 'lottie-react'
 import AOS from 'aos'
 import 'aos/dist/aos.css'
 
@@ -141,22 +141,16 @@ const Home = () => {
     return () => clearTimeout(timeout);
   }, [handleTyping]);
 
-  // Lottie configuration
-  const lottieOptions = {
-    src: "https://lottie.host/58753882-bb6a-49f5-a2c0-950eda1e135a/NLbpVqGegK.lottie",
-    loop: true,
-    autoplay: true,
-    rendererSettings: {
-      preserveAspectRatio: 'xMidYMid slice',
-      progressiveLoad: true,
-    },
-    style: { width: "100%", height: "100%" },
-    className: `w-full h-full transition-all duration-500 ${
-      isHovering 
-        ? "scale-[180%] sm:scale-[160%] md:scale-[150%] lg:scale-[145%] rotate-2" 
-        : "scale-[175%] sm:scale-[155%] md:scale-[145%] lg:scale-[140%]"
-    }`
-  };
+  // State for Lottie animation data
+  const [animationData, setAnimationData] = useState(null);
+
+  // Load the Lottie JSON file
+  useEffect(() => {
+    fetch(`${import.meta.env.BASE_URL}Coding.json`)
+      .then(response => response.json())
+      .then(data => setAnimationData(data))
+      .catch(error => console.error('Error loading Lottie animation:', error));
+  }, []);
 
   return (
     <div className="min-h-screen bg-[#030014] overflow-hidden px-[5%] sm:px-[5%] lg:px-[10%] " id="Home">
@@ -183,7 +177,7 @@ const Home = () => {
                 <p className="text-base md:text-lg text-gray-400 max-w-xl leading-relaxed font-light"
                   data-aos="fade-up"
                   data-aos-delay="1000">
-                  Enthusiastic Mechanical Engineering student passionate about AI/ML, simulation-driven design, RF systems, CFD & Finite element modelling.
+                  Enthusiastic Engineering student passionate about AI/ML, simulation-driven design, RF systems, CFD & Finite element modelling.
                 </p>
 
                 {/* Tech Stack */}
@@ -223,7 +217,19 @@ const Home = () => {
                 <div className={`relative lg:left-12 z-10 w-full opacity-90 transform transition-transform duration-500 ${
                   isHovering ? "scale-105" : "scale-100"
                 }`}>
-                  <DotLottieReact {...lottieOptions} />
+                  {animationData && (
+                    <Lottie
+                      animationData={animationData}
+                      loop={true}
+                      autoplay={true}
+                      style={{ width: "100%", height: "100%" }}
+                      className={`w-full h-full transition-all duration-500 ${
+                        isHovering 
+                          ? "scale-[180%] sm:scale-[160%] md:scale-[150%] lg:scale-[145%] rotate-2" 
+                          : "scale-[175%] sm:scale-[155%] md:scale-[145%] lg:scale-[140%]"
+                      }`}
+                    />
+                  )}
                 </div>
 
                 <div className={`absolute inset-0 pointer-events-none transition-all duration-700 ${
