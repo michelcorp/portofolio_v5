@@ -149,7 +149,7 @@ const WelcomeScreen = ({ onLoadingComplete }) => {
                 className="text-center"
                 variants={childVariants}
                 data-aos="fade-up"
-                data-aos-delay="1200"
+                data-aos-delay="1500"
               >
                 <a
                   href="https://michelcorp.github.io/My_Portfolio/"

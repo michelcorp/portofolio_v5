@@ -209,7 +209,7 @@ const AboutPage = () => {
               data-aos="fade-right"
               data-aos-duration="1500"
             >
-             Enthusiastic and technically curious Mechanical Engineering undergraduate at University of Leeds with strong Data anlysis and software skills, a growing interest in AI/ML, Bussiness, Economics, semiconductor electronics, and experienced in RF systems, ML automation and simulation-driven design. I'm eager to contribute to the future of test software development,AI and finite element modelling. A fast learner, collaborative team player, and committed problem solver excited by high-performance electronics, aerospace, Product Design, Architecture and thermal stress domains.
+             Enthusiastic and technically curious Mechanical Engineering undergraduate with strong Data anlysis and software skills, a growing interest in AI/ML, Bussiness, Economics, semiconductor electronics, and experienced in RF systems, ML automation and simulation-driven design. I'm eager to contribute to the future of test software development,AI and finite element modelling. A fast learner, collaborative team player, and committed problem solver excited by high-performance electronics, aerospace, Product Design, Architecture and thermal stress domains.
             </p>
 
                {/* Quote Section */}

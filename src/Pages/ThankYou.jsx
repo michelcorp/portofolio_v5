@@ -13,7 +13,7 @@ const ThankYouPage = () => {
           Thank You!
         </h1>
         <p className="text-gray-400 text-lg mb-8">
-          Your message has been received. I'll get back to you as soon as possible.
+          Your message has been received. I'll get back to you as soon as possible. In the meantime, you can connect with me on linkedin and drop a comment here.
         </p>
         <Link
           to="/"
