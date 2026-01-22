@@ -4,9 +4,8 @@ import react from '@vitejs/plugin-react'
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [react()],
-  // Base path for GitHub Pages (uncomment and adjust if deploying to a subdirectory)
-  // base: process.env.NODE_ENV === 'production' ? '/Portofolio_V5/' : '/',
-  base: '/',
+  // Base path for GitHub Pages
+  base: process.env.NODE_ENV === 'production' ? '/portofolio_v5/' : '/',
   resolve: {
     alias: {
       // Fix for react-swipeable-views importing Babel runtime helper paths under
