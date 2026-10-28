@@ -237,10 +237,10 @@ We would appreciate it if you decide to use this project. Please include proper 
 
 If you have any questions or need help with the setup, feel free to reach out\!
 
-**Eki Zulfar Rachman**
+**Saint Michel Linus**
 
   - Website: [https://www.eki.my.id/](https://www.eki.my.id/)
-  - GitHub: [EkiZR](https://github.com/EkiZR)
+  - GitHub: [Michel](https://github.com/EkiZR)
 
 -----
 
